@@ -11,7 +11,10 @@ const app: Application = express();
 //app.use(cors());
 app.use(
   cors({
-    origin: ['http://127.0.0.1:5500'],
+    origin: [
+      'http://127.0.0.1:5500',
+      'https://ecommerce-website-liart-rho.vercel.app',
+    ],
     credentials: true,
   })
 );
